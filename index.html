@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop by Shin Lim</title>
+    <!-- Link TO CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo"> Palpistation </a>
+      <!-- Menu-Icon -->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <div class="header-icon">
+        <i
+          class="bx bx-cart-alt"
+          style="font-size: 22px; display: flex; align-items: center"
+          ><span id="cart-count">0</span></i
+        >
+
+        <i
+          class="bx bx-search"
+          id="search-icon"
+          style="font-size: 22px; display: flex; align-items: center"
+        ></i>
+        <a href="#" class="login_btn">Login</a>
+        <a href="#" class="btn">Register</a>
+      </div>
+      <div id="cart-container" class="cart-container">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items-list" class="cart-items-list"></ul>
+        <p id="cart-total">Total: $0.00</p>
+      </div>
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+    </header>
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <!-- Login form fields -->
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register</h2>
+        <form id="registerForm">
+          <!-- Registration form fields -->
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Come for the coffee,<br />stay for the vibe</h1>
+        <p>
+          A cozy coffee shop serving up delicious, freshly brewed coffee and a
+          warm atmosphere.
+        </p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+      <div class="home-img">
+        <img src="img/main.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <div class="heading">
+        <h2>Our popular products</h2>
+      </div>
+      <!-- Container -->
+      <div class="products-container">
+        <div class="box">
+          <img src="img/p1.png" alt="" />
+          <h3>Arabica Coffee</h3>
+          <div class="content">
+            <span>$65</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/p2.png" alt="" />
+          <h3>Cafe Botero</h3>
+          <div class="content">
+            <span>$25</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/p3.png" alt="" />
+          <h3>Patch Roast</h3>
+          <div class="content">
+            <span>$20</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/p4.png" alt="" />
+          <h3>Americano Pure</h3>
+          <div class="content">
+            <span>$30</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/p5.png" alt="" />
+          <h3>Sacred Grounds</h3>
+          <div class="content">
+            <span>$35</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+        <div class="box">
+          <img src="img/p6.png" alt="" />
+          <h3>Presto</h3>
+          <div class="content">
+            <span>$50</span>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
